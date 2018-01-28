@@ -1,4 +1,4 @@
-# Auto Selling Bot For Coinbase Gdax
+# Auto Selling Bot For Coinbase/Gdax
 Automates converting BTC to EUR on Coinbase, via Gdax to avoid Coinbase's high fees.
 
 
