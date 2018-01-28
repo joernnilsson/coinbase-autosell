@@ -17,4 +17,5 @@ Api access to bot Coinbase and Gdax is required. The script expects these env va
 	
 ### Docker
 Make vars.env with the required variables
+
 	docker run -d -it --env-file vars.env --name cb-autosell  coinbase-autosell
