@@ -53,6 +53,8 @@ def spin():
     logger.info("Gdax BTC balance: %f", gdax_btc_balance)
     #pp.pprint(gdax_btc_account)
 
+    # Need some sleep time here
+    time.sleep(5)
 
     # Sell any BTC
     if(gdax_btc_balance > 0.00001):
