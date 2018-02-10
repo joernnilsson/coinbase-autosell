@@ -47,7 +47,7 @@ def spin():
     if(cb_btc_balance > 0.00001):
         logger.info("Transferring %f BTC from Coinbase to Gdax...", cb_btc_balance)
         out = gdax.coinbase_deposit(amount=cb_btc_balance, currency=BTC, coinbase_account_id=cb_account_btc.id)
-        logger.degub("Transfer returned: %s", pp.pformat(out))
+        logger.debug("Transfer returned: %s", pp.pformat(out))
         if('id' in out):
             logger.info("Transferred %f BTC from Coinbase to Gdax...", cb_btc_balance)
             time.sleep(5)            
@@ -71,7 +71,7 @@ def spin():
     if(gdax_btc_balance > 0.00001):
         logger.info("Selling %f BTC for EUR on Gdax", gdax_btc_balance)
         out = gdax.sell(size=str(gdax_btc_balance), product_id=BTC_EUR, type="market")
-        logger.degub("Gdax Sell returned: %s", pp.pformat(out))
+        logger.debug("Gdax Sell returned: %s", pp.pformat(out))
         time.sleep(5)
 
 
