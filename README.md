@@ -1,3 +1,5 @@
+[![Docker Build Status](https://img.shields.io/docker/build/joernsn/coinbase-autosell.svg?style=flat-square)]()
+
 # Auto Selling Bot For Coinbase/Gdax
 Automates converting BTC to EUR on Coinbase, via Gdax to avoid Coinbase's high fees.
 
